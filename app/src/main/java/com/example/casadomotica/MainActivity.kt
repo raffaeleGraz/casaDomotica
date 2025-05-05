@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,12 +14,22 @@ class MainActivity : AppCompatActivity() {
 
         val btnStazione = findViewById<Button>(R.id.btnStazione)
         btnStazione.setOnClickListener {
-            intent()
+            intentStazione()
+        }
+
+        val btnWebView = findViewById<Button>(R.id.btnWebView)
+        btnWebView.setOnClickListener {
+            intentWebView()
         }
     }
 
-    private fun intent(){
+    private fun intentStazione(){
         val intent = Intent(this, Stazione::class.java)
+        startActivity(intent)
+    }
+
+    private fun intentWebView(){
+        val intent = Intent(this, WebView::class.java)
         startActivity(intent)
     }
 }
