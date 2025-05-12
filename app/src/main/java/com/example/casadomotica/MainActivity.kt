@@ -17,10 +17,6 @@ class MainActivity : AppCompatActivity() {
             intentStazione()
         }
 
-        val btnWebView = findViewById<Button>(R.id.btnWebView)
-        btnWebView.setOnClickListener {
-            intentWebView()
-        }
     }
 
     private fun intentStazione(){
@@ -28,8 +24,4 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun intentWebView(){
-        val intent = Intent(this, CasaDomotica::class.java)
-        startActivity(intent)
-    }
 }
