@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun intentWebView(){
-        val intent = Intent(this, WebView::class.java)
+        val intent = Intent(this, CasaDomotica::class.java)
         startActivity(intent)
     }
 }
