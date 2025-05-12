@@ -19,12 +19,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         val btnGiardino = findViewById<ImageButton>(R.id.btnGiardino)
-        btnCasa.setOnClickListener{
+        btnGiardino.setOnClickListener{
             intent(Giardino::class.java)
         }
 
         val btnAI = findViewById<ImageButton>(R.id.btnAI)
-        btnCasa.setOnClickListener{
+        btnAI.setOnClickListener{
             intent(AI::class.java)
         }
 
